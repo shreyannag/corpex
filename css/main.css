@@ -1,0 +1,262 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*font awesome*/
+@import url('fontawesome/css/font-awesome.min.css');
+/*bxslider*/
+@import url('https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css');
+/*box sizing applies to whole body*/
+* {
+    box-sizing: border-box;
+}
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+/*column widths*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*navigation*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.562);
+    position: fixed; z-index: 99; top:0;
+}
+
+li { float: left;}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+.logo {
+    padding:0% 15% 0% 10%;
+}
+.option{ padding-top: 15px; }
+/*Here i made options background transparent to stop overlapping of the 
+same color with the parent ul background color
+*/
+.menubar{
+    display: none;
+    float: left;
+}
+/*banner slideshow*/
+header { position: relative; z-index: 98;}
+/*For all images on the page*/
+img { max-width: 100%; height: auto;}
+/*services*/
+.headerclass{
+    position: relative;
+    height: 25%;
+    padding-top: 5%;
+    background-color: rgba(219, 219, 219, 0.486);
+}
+.headerclass > h3{
+    text-align: center;
+    padding-bottom: 0;
+    font-weight: bold;
+}
+.underline{
+    width:75px;
+    padding-top:0;
+    border-color: rgb(0, 153, 255);
+    border-style: solid;
+    margin: auto;
+}
+.mototag{
+    margin: auto;
+    width: 50%;
+    overflow: hidden;
+}
+.mototag > p {
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+    padding-top: 15px;
+}
+/*products listings*/
+.productlist{
+    padding-top: 3%;
+    background-color: rgba(219, 219, 219, 0.486);
+    padding-left:10%;
+    padding-bottom: 5%; 
+}
+.product{
+    display: inline-block;
+    width: 25%;
+    height: 15%;
+    margin: 25px;
+    background-color: rgba(228, 223, 223, 0.842);
+    color: rgb(0, 110, 255);
+    border: 3px solid rgba(228, 223, 223, 0.842);
+    overflow: hidden;
+}
+
+.product:hover{
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: 3px solid rgb(0, 132, 255);
+}
+.product > h5{
+    text-align: center;
+}
+.product > p {
+    text-align: center;
+}
+/*skils-display*/
+.skill-display{
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.skill-banner{
+    display:inline-block;
+    width:45%;
+    height:20%;
+    margin:25px 5px 25px 35px;
+    border: 3px solid white;
+}
+.skill-banner > h2{
+    font-weight: bolder;
+}
+.skill-banner > p{
+    font-size:90%;
+}
+.col-7 > img{
+    padding-left: 30%;
+    background-size: cover;
+}
+/*-skills-chart-*/
+.stats{
+    padding-right: 10%;
+}
+/*for scroll animation*/
+.skillhide1{
+    opacity: 0;
+}
+.skillhide2{
+    opacity: 0;
+}
+.skillhide3{
+    opacity: 0;
+}
+.skillhide4{
+    opacity: 0;
+}
+.skill-chart{
+    padding-top: 5%;
+}
+
+.chart{
+    width: 100%;
+    background-color: rgba(212, 212, 212, 0.753);
+    border-radius: 20px;
+}
+.skills{
+    text-align: center;
+    padding-right: 15px;
+    line-height: 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*skill animation*/
+.develop
+{
+    background-color: rgb(0, 140, 255); 
+    animation: loaddev 2s ease-out forwards;
+}
+.design
+{
+    animation: loaddesign 2s ease-out forwards;
+    background-color: rgb(0, 140, 255);
+}
+.market
+{
+    animation: loadmarket 2s ease-out forwards;
+    background-color: rgb(0, 140, 255);}
+.branding
+{
+    animation: loadbrand 2s ease-out forwards;
+    background-color: rgb(0, 140, 255);
+}
+@keyframes loaddev{
+    0%{
+        width: 0%;
+    }
+    100%{ width: 73%;}
+}
+@keyframes loaddesign{
+    0%{
+        width: 0%;
+    }
+    100%{ width: 95%;}
+}
+@keyframes loadmarket{
+    0%{
+        width: 0%;
+    }
+    100%{ width: 61%;}
+}
+@keyframes loadbrand{
+    0%{
+        width: 0%;
+    }
+    100%{ width: 82%;}
+}
+/*get updates*/
+.get-updates{
+    padding-top: 5%;
+    background-color: rgba(219, 219, 219, 0.486);
+    display: block;
+    position: relative;
+}
+.get-updates >h2{
+    text-align: center;
+    font-weight: bold;
+}
+.form{
+    margin: 0;
+}
+/*media queries*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .option{
+        display: none;
+    }
+    
+    .menubar{
+        display: block;
+        padding-top: 10px;
+        padding-right: 1px;
+       
+    }
+    .menubar:hover .option{
+        left:0;
+
+    }
+    .menubar:hover + .option{
+        display: block;
+    }
+}
